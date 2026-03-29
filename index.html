@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Photo Gallery</title>
+
+    <style>
+        #image {
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            line-height: 300px;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        img {
+            width: 150px;
+            margin: 10px;
+        }
+
+        img:hover, img:focus {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body onload="init()">
+
+<h1>Accessible Interactive Photo Gallery</h1>
+
+<div id="image">
+    Hover over an image below to display here.
+</div>
+
+<img src="https://picsum.photos/id/101/200" alt="Mountain"
+     onmouseover="upDate(this)" onmouseout="undo()"
+     onfocus="upDate(this)" onblur="undo()">
+
+<img src="https://picsum.photos/id/102/200" alt="Forest"
+     onmouseover="upDate(this)" onmouseout="undo()"
+     onfocus="upDate(this)" onblur="undo()">
+
+<img src="https://picsum.photos/id/103/200" alt="Ocean"
+     onmouseover="upDate(this)" onmouseout="undo()"
+     onfocus="upDate(this)" onblur="undo()">
+
+<img src="https://picsum.photos/id/104/200" alt="River"
+     onmouseover="upDate(this)" onmouseout="undo()"
+     onfocus="upDate(this)" onblur="undo()">
+
+<img src="https://picsum.photos/id/105/200" alt="Sunset"
+     onmouseover="upDate(this)" onmouseout="undo()"
+     onfocus="upDate(this)" onblur="undo()">
+
+<img src="https://picsum.photos/id/106/200" alt="City"
+     onmouseover="upDate(this)" onmouseout="undo()"
+     onfocus="upDate(this)" onblur="undo()">
+
+<script src="script.js"></script>
+
+</body>
+</html>
